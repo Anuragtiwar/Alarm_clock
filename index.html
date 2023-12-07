@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm Clock in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="clockContainer">
+            <h1>Alarm Rings At:</h1>
+<div class="alramInfo">
+    <div class="box" id="InfoBox1"></div>
+    <div class="box" id="InfoBox2"></div>
+    <div class="box" id="InfoBox3"></div>
+    <div class="box" id="InfoBox4"></div>
+</div>
+
+
+            <div class="image">
+                <img src="alarmClock.png" alt="">
+            </div>
+
+            <h1>Current Time:</h1>
+            <div class="TimeContainer">
+                <div class="box" id="box1"></div>
+                <div class="box" id="box2"></div>
+                <div class="box" id="box3"></div>
+                <div class="box" id="box4"></div>
+            </div>
+
+
+
+            <div class="options">
+
+               <select name="hours" id="hours"  class="btn" >
+                <option value="00" selected>HOURS</option>
+            </select>
+            
+            
+            <select name="minutes" id="minutes" class="btn">
+                   <option value="00" selected>MINUTES</option>
+                   
+               </select>
+
+               <select name="seconds" id="seconds" class="btn">
+                <option value="00" selected>SECONDS</option>
+               </select>
+
+               <select name="setAlarm" id="Am/PM" class="btn">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+               </select>
+            </div>
+
+            <div class="btnContainer">
+                <button class="btn" onclick="checkForValidtime();">Set Alarm</button>
+                <button class="btn" onclick="snooze();">Snooze Alarm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
